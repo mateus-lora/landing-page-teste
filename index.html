@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin by Heloise | Estética Facial em Passo Fundo</title>
+    
+    <!-- Configuração do Tailwind CSS (Design System) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rose: '#C48B9F',       /* Rosa Seco / Rose Gold */
+                        rosedark: '#a36d80',   /* Rosa Seco Escuro para Hover */
+                        offwhite: '#FAFAFA',   /* Fundo suave */
+                        dark: '#4A3C31',       /* Texto marrom escuro/chumbo */
+                        nude: '#F9F5F6',       /* Fundo contraste leve */
+                        wpp: '#25D366'         /* Verde WhatsApp Original */
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        script: ['Great Vibes', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Fontes do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-offwhite text-gray-600 antialiased selection:bg-rose selection:text-white relative">
+
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+    <a href="https://wa.me/5551995824615?text=Ol%C3%A1%2C%20Heloise%21%20Tudo%20bem%3F%20Vi%20o%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20cuidar%20da%20minha%20pele." target="_blank" class="fixed bottom-6 right-6 bg-wpp text-white w-14 h-14 rounded-full shadow-2xl z-50 hover:scale-110 transition-transform duration-300 flex items-center justify-center text-3xl">
+        💬
+    </a>
+
+    <!-- DOBRA 1: Hero Section -->
+    <header class="relative bg-gradient-to-b from-white to-offwhite py-12 md:py-20 px-5 md:px-6 min-h-[85vh] flex flex-col justify-center items-center text-center">
+        
+        <!-- LOGO OFICIAL AQUI -->
+        <div class="mb-8 flex flex-col items-center">
+            <!-- A classe mix-blend-multiply faz o fundo branco da logo sumir e mesclar com a página -->
+            <img src="logo.jpg" alt="Logo Skin by Heloise" class="w-56 md:w-64 lg:w-72 object-contain mix-blend-multiply">
+        </div>
+
+        <h1 class="font-serif text-3xl md:text-5xl lg:text-6xl text-dark font-semibold mb-5 max-w-4xl leading-snug">
+            Descubra a sua melhor versão.<br class="hidden sm:block"> Realçando sua beleza com <span class="italic text-rose font-light">leveza</span> ✨
+        </h1>
+        
+        <p class="text-base md:text-xl text-gray-500 max-w-2xl mb-8 font-light px-2">
+            Tratamentos faciais em <strong>Passo Fundo - RS</strong>. Renove sua pele e sua autoestima com procedimentos focados na sua naturalidade, sem exageros.
+        </p>
+
+        <!-- Botão expandido no celular (w-full) -->
+        <a href="https://wa.me/5551995824615?text=Ol%C3%A1%2C%20Heloise%21%20Tudo%20bem%3F%20Vi%20o%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20cuidar%20da%20minha%20pele." target="_blank" class="w-full sm:w-auto bg-rose hover:bg-rosedark text-white font-medium py-4 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2 text-base md:text-lg">
+            📱 Agendar Minha Avaliação
+        </a>
+    </header>
+
+    <!-- DOBRA 2: Tratamentos -->
+    <section class="py-16 md:py-24 bg-white px-5 md:px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-serif text-2xl md:text-4xl text-dark text-center mb-12 font-semibold">
+                Cuidados pensados para as <br class="hidden md:block">necessidades da sua pele
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-offwhite p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-shadow text-center flex flex-col items-center">
+                    <div class="text-4xl mb-4">🫧</div>
+                    <h3 class="text-xl font-serif text-dark font-bold mb-3">Limpeza de Pele</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed flex-grow">A base para uma pele saudável. Removemos impurezas e cravos, devolvendo o viço e controlando a oleosidade. Rosto macio e iluminado.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-offwhite p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-shadow text-center flex flex-col items-center">
+                    <div class="text-4xl mb-4">💉</div>
+                    <h3 class="text-xl font-serif text-dark font-bold mb-3">Microagulhamento</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed flex-grow">O segredo para o rejuvenescimento natural. Estimula o colágeno, atenua cicatrizes de acne, reduz linhas finas e uniformiza a pele.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-offwhite p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-shadow text-center flex flex-col items-center">
+                    <div class="text-4xl mb-4">🤍</div>
+                    <h3 class="text-xl font-serif text-dark font-bold mb-3">Peelings Químicos</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed flex-grow">Renovação celular com resultados visíveis. Focados em clarear manchas, secar acne ativa e revelar uma pele mais jovem e lisa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOBRA 3: Sobre a Heloise -->
+    <section class="py-16 md:py-24 bg-nude px-5 md:px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="relative px-4 md:px-0">
+                <!-- Imagem (Substitua o link abaixo pela foto real dela) -->
+                <img src="Heloise.png" alt="Heloise Brollo" class="rounded-t-full rounded-b-3xl shadow-2xl border-4 md:border-8 border-white object-cover aspect-[3/4] w-full">
+                <div class="absolute -bottom-4 -right-2 md:-bottom-6 md:-right-6 bg-white p-4 md:p-6 rounded-full shadow-xl">
+                    <span class="font-script text-2xl md:text-3xl text-rose">Biomedicina</span>
+                </div>
+            </div>
+            
+            <div>
+                <h2 class="font-serif text-3xl md:text-4xl text-dark font-semibold mb-6">Prazer, <span class="font-script text-4xl md:text-5xl text-rose block mt-2">Heloise Brollo</span></h2>
+                <div class="space-y-4 text-gray-600 text-base md:text-lg font-light leading-relaxed">
+                    <p>Sou apaixonada pela saúde da pele e por como ela impacta diretamente a nossa confiança diária.</p>
+                    <p>Como acadêmica de Biomedicina (3º semestre) e profissional com formações rigorosas em estética facial, meu objetivo é unir a ciência exata ao toque humanizado. Estou em constante atualização para trazer as técnicas mais seguras para você.</p>
+                    <p class="font-medium text-dark border-l-4 border-rose pl-4 mt-6 italic">"Acredito em uma estética que cuida, trata e valoriza os seus traços. Meu propósito é entregar resultados reais e elegantes, respeitando a sua essência."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOBRA 4: Por que escolher -->
+    <section class="py-16 md:py-24 bg-white px-5 md:px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-serif text-2xl md:text-4xl text-dark text-center mb-12 font-semibold">Por que confiar a sua pele a mim?</h2>
+            
+            <div class="space-y-6">
+                <div class="flex items-start gap-4 bg-offwhite p-5 md:p-6 rounded-xl">
+                    <div class="text-rose text-xl mt-1">✔️</div>
+                    <div>
+                        <h4 class="text-lg font-bold text-dark mb-1">Beleza Natural</h4>
+                        <p class="text-gray-500 text-sm">Foco em realçar o que você tem de melhor, promovendo rejuvenescimento sem perder a sua identidade.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4 bg-offwhite p-5 md:p-6 rounded-xl">
+                    <div class="text-rose text-xl mt-1">✔️</div>
+                    <div>
+                        <h4 class="text-lg font-bold text-dark mb-1">Conhecimento Atualizado</h4>
+                        <p class="text-gray-500 text-sm">A bagagem científica da Biomedicina aliada à prática técnica focada em resultados seguros.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4 bg-offwhite p-5 md:p-6 rounded-xl">
+                    <div class="text-rose text-xl mt-1">✔️</div>
+                    <div>
+                        <h4 class="text-lg font-bold text-dark mb-1">Atendimento Personalizado</h4>
+                        <p class="text-gray-500 text-sm">Avaliação cuidadosa e sem pressa. Entendo o seu tipo de pele e rotina antes de indicar qualquer procedimento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOBRA 5: Rodapé -->
+    <footer class="bg-dark pt-16 md:pt-24 pb-10 px-5 md:px-6 text-center border-t-8 border-rose">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="font-serif text-2xl md:text-4xl text-white font-semibold mb-4">Sua pele é o seu melhor cartão de visitas.</h2>
+            <p class="text-gray-300 text-base md:text-lg mb-8">Que tal darmos a ela o cuidado e o brilho que ela merece hoje?</p>
+            
+            <a href="https://wa.me/5551995824615?text=Ol%C3%A1%2C%20Heloise%21%20Tudo%20bem%3F%20Vi%20o%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20cuidar%20da%20minha%20pele." target="_blank" class="w-full sm:w-auto inline-flex justify-center bg-rose hover:bg-white hover:text-dark text-white font-bold py-4 px-8 rounded-full shadow-2xl transition-all duration-300 mb-16 text-lg items-center gap-2">
+                📱 Falar com a Heloise
+            </a>
+            
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4">
+                <p>📍 Atendimentos em Passo Fundo - RS</p>
+                <p><a href="https://instagram.com/skinbyheloise" target="_blank" class="hover:text-rose">📸 @skinbyheloise</a></p>
+            </div>
+            <p class="text-xs text-gray-500 mt-6">
+                Heloise Brollo | Acadêmica de Biomedicina e Profissional Certificada em Estética Facial.<br>
+                &copy; 2024 Skin by Heloise. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
